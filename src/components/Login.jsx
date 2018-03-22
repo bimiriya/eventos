@@ -48,7 +48,7 @@ class Login extends Component {
         {this.state.user ? (
           <Nav pullRight>
             <NavItem eventKey={1} href="#">
-              <button className="btn">Create Event</button>
+              <NewEvent />
             </NavItem>
             <NavDropdown
               eventKey={4}

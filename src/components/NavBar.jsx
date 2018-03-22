@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
+import NewEvent from './Modal/modal';
 import Login from './Login';
 
 class NavBar extends Component {

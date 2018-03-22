@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Login from './components/Login'
-import DialogExampleModal from './components/Modal/modal.js';
+import newEvent from './components/Modal/modal.js';
 import logo from './logo.svg';
+import FontAwesome from 'react-fontawesome';
 import NavBar from './components/NavBar';
 import Carousel from './components/Carousel';
 import Eventos from './components/Eventos';
