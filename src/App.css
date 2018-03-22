@@ -11,7 +11,10 @@
   height: 6vh;
   font-size: 90%;
   text-align: center;
-  margin-left: -100%;
+  margin-left: -20%;
+}
+
+#basic-nav-dropdown {
   margin-top: 5%;
 }
 
