@@ -46,23 +46,34 @@ class Login extends Component {
     return (
       <div>
         {this.state.user ? (
-        <Nav pullRight>
-              <NewEvent />
-              <NavDropdown
-                eventKey={4}
-                title={this.state.user.displayName}
-                id="basic-nav-dropdown"
-              > <img src={this.state.user.photoURL} alt=""/>
-                {' '}
-                <MenuItem eventKey={3.1}>Mi perfil</MenuItem>
-                <MenuItem eventKey={3.2}>Mis eventos</MenuItem>
-                <MenuItem eventKey={3.3}>Organizados por mi</MenuItem>
-                <MenuItem eventKey={3.4}>Favoritos</MenuItem>
-                <MenuItem divider />
-                <MenuItem onClick={this.logout} eventKey={3.3}>Cerrar sesión</MenuItem>
-              </NavDropdown>
-            </Nav>
-        ) : <Nav pullRight><NavItem onClick={this.login} >Iniciar sesión</NavItem></Nav> }
+          <Nav pullRight>
+            <NavItem eventKey={1} href="#">
+              <button className="btn">Create Event</button>
+            </NavItem>
+            <NavDropdown
+              eventKey={4}
+              title={this.state.user.displayName}
+              id="basic-nav-dropdown"
+            >
+              {' '}
+              <img src={this.state.user.photoURL} alt="" />{' '}
+              <MenuItem eventKey={3.1}>Mi perfil</MenuItem>
+              <MenuItem eventKey={3.2}>Mis eventos</MenuItem>
+              <MenuItem eventKey={3.3}>Organizados por mi</MenuItem>
+              <MenuItem eventKey={3.4}>Favoritos</MenuItem>
+              <MenuItem divider />
+              <MenuItem onClick={this.logout} eventKey={3.3}>
+                Cerrar sesión
+              </MenuItem>
+            </NavDropdown>
+          </Nav>
+        ) : (
+          <Nav pullRight>
+            <NavItem>
+              <button onClick={this.login} className="btn">INICIA SESIÓN</button>
+            </NavItem>
+          </Nav>
+        )}
       </div>
     );
   }
