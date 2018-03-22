@@ -14,9 +14,9 @@ class ControlledCarousel extends Component {
   
     render() {
       return (
-        <Carousel>
-          <Carousel.Item>
-          <img width={900} height={500} alt="900x500"  className="img" src={process.env.PUBLIC_URL + '/images/descarga.jpeg'} />
+        <Carousel id="carousel">
+          <Carousel.Item className="item">
+          <img className="img" src={process.env.PUBLIC_URL + '/images/descarga.jpeg'} />
             <Carousel.Caption>
             
               <h3>First slide label</h3>
@@ -24,14 +24,14 @@ class ControlledCarousel extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" className="img" src={process.env.PUBLIC_URL + '/images/des.jpeg'} />
+            <img className="img" src={process.env.PUBLIC_URL + '/images/des.jpeg'} />
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" className="img" src={process.env.PUBLIC_URL + '/images/images.jpeg'} />
+            <img className="img" src={process.env.PUBLIC_URL + '/images/images.jpeg'} />
             <Carousel.Caption>
               <h3>Third slide label</h3>
               <p>

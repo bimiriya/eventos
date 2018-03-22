@@ -5,11 +5,10 @@ import Login from './Login';
 class NavBar extends Component {
   render() {
     return (
-      <div>
-        <Navbar collapseOnSelect>
+        <Navbar collapseOnSelect id="nav">
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">Eventech</a>
+              <a className="nice_font" id="brand" href="#brand"><strong>EVENTECH</strong></a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -17,7 +16,6 @@ class NavBar extends Component {
             <Login />
           </Navbar.Collapse>
         </Navbar>
-      </div>
     );
   }
 }
