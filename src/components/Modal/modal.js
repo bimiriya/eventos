@@ -5,7 +5,9 @@ import { Tooltip } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { OverlayTrigger } from 'react-bootstrap';
 import Login from './../Login';
-
+import DatosNewEvent from './datos';
+import Cupos from './cupos';
+import Description from './description';
 
 
 class NewEvent extends Component {
@@ -47,36 +49,33 @@ class NewEvent extends Component {
             <Modal.Title>New Event</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>Text in a modal</h4>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </p>
+            <h4>Nombre del Evento</h4>
+            <DatosNewEvent />
 
-            <h4>Popover in a modal</h4>
-            <p>
-              there is a{' '}
-              <OverlayTrigger overlay={popover}>
-                <a href="#popover">popover</a>
-              </OverlayTrigger>{' '}
-              here
-            </p>
+            <h4>Lugar del Evento</h4>
+            <DatosNewEvent />
 
-            <h4>Tooltips in a modal</h4>
-            <p>
-              there is a{' '}
-              <OverlayTrigger overlay={tooltip}>
-                <a href="#tooltip">tooltip</a>
-              </OverlayTrigger>{' '}
-              here
-            </p>
+            <h4>Nombre del Expositor</h4>
+            <DatosNewEvent />
+
+            <h4>Hora</h4>
+            <DatosNewEvent />
+
+            <h4>Fecha</h4>
+            <DatosNewEvent />
+
+            <h4>Cupos</h4>
+            <Cupos />
 
             <hr />
 
-            <h4>Overflowing text to show scroll behavior</h4>
+            <h4>Descripción</h4>
+            <Description />
             
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
+          <Button onClick={this.handleClose}>Cancelar</Button>
+            <Button onClick={this.handleClose}>Crear</Button>
           </Modal.Footer>
         </Modal>
       </div>
