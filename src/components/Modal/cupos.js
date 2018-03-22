@@ -9,7 +9,7 @@ class Cupos extends Component {
     return (
       <FormGroup controlId="formControlsSelect">
           <FormControl componentClass="select" placeholder="select">
-            <option value="select">select</option>
+            <option value="select">Selecciona los cupos para el evento</option>
             <option value="other">1</option>
             <option value="other">2</option>
             <option value="other">3</option>

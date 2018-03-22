@@ -74,7 +74,8 @@ class NewEvent extends Component {
             
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
+          <Button onClick={this.handleClose}>Cancelar</Button>
+            <Button onClick={this.handleClose}>Crear</Button>
           </Modal.Footer>
         </Modal>
       </div>

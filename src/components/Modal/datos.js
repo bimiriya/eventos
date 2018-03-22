@@ -7,7 +7,7 @@ class DatosNewEvent extends Component {
   render() {
     return(
     <FormGroup>
-      <FormControl type="text" placeholder="Normal text" />
+      <FormControl type="text" placeholder="" />
     </FormGroup>
     )
   }
