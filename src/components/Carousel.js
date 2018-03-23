@@ -16,7 +16,7 @@ class ControlledCarousel extends Component {
       return (
         <Carousel id="carousel">
           <Carousel.Item className="item">
-          <img className="img" src={process.env.PUBLIC_URL + '/images/descarga.jpeg'} />
+          <img className="img" src='https://picsum.photos/1000/1000/?random' />
             <Carousel.Caption>
             
               <h3>First slide label</h3>
