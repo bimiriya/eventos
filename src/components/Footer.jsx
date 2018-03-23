@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Grid } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
 
 
@@ -7,6 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="text-center">
+      <Grid>
         <Row>
           <Col md={4} xs={6}>
             <a className="nice_font" href="">Quiénes somos</a>
@@ -20,6 +21,7 @@ class Footer extends Component {
             <FontAwesome className="icon" name='twitter' />
           </Col>
         </Row>
+        </Grid>
       </footer>
     );
   }
