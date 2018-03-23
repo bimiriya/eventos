@@ -22,6 +22,7 @@ class Login extends Component {
       if (user) {
         this.setState({ user });
       }
+      console.log(user.uid)
     });
   }
 

@@ -63,3 +63,7 @@ footer a {
   color: white;
   font-family: 'Hind Siliguri', sans-serif;
 }
+
+#nav img {
+  width: 100%;
+}
